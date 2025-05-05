@@ -3,47 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry - PlumbTech Services</title>
+    <title>BILLA Plumbing Solutions | Inquiries</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-color: #f4f4f9; font-family: Arial, sans-serif; color: #333; margin: 0; padding: 0;">
-    <header style="background-color: #003366; color: white; padding: 10px;">
-        <div style="text-align: center;">
-            <img src="images/logo.png" alt="PlumbTech Logo" style="width: 150px; height: auto;">
-            <h1>PlumbTech Services</h1>
+<body>
+    <header>
+        <div class="container">
+            <h1>BILLA Plumbing Solutions</h1>
             <nav>
-                <ul style="list-style-type: none; padding: 0; text-align: center;">
-                    <li style="display: inline; margin: 0 15px;"><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
-                    <li style="display: inline; margin: 0 15px;"><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
-                    <li style="display: inline; margin: 0 15px;"><a href="services.html" style="color: white; text-decoration: none;">Services</a></li>
-                    <li style="display: inline; margin: 0 15px;"><a href="enquiry.html" style="color: white; text-decoration: none;">Enquiry</a></li>
-                    <li style="display: inline; margin: 0 15px;"><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inquiries.html" class="active">Inquiries</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section style="background-color: #007acc; color: white; text-align: center; padding: 50px 0;">
-            <img src="images/enquiry.jpg" alt="Enquire About Our Services" style="width: 100%; height: auto;">
-            <h2>Enquire About Our Services</h2>
-            <p>Fill out the form below to get in touch with us for a free quote or more information.</p>
-        </section>
-
-        <section style="padding: 40px; background-color: #ffffff; text-align: center;">
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" required></textarea><br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+        <div class="container">
+            <section>
+                <h2>Inquiries</h2>
+                <p>Need a quote or have questions about our services? Fill out the form below and we'll get back to you as soon as possible.</p>
+                <div class="content-box">
+                    <form>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div>
+                            <label for="service">Service Required:</label>
+                            <select id="service" name="service">
+                                <option value="residential">Residential Plumbing</option>
+                                <option value="commercial">Commercial Plumbing</option>
+                                <option value="emergency">Emergency Service</option>
+                                <option value="maintenance">Maintenance</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="10" required></textarea>
+                        </div>
+                        <button type="submit">Submit Inquiry</button>
+                    </form>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer style="background-color: #003366; color: white; text-align: center; padding: 15px;">
-        <p>&copy; 2025 PlumbTech Services. All rights reserved.</p>
+    <footer>
+        <div class="container">
+            <p>Serving Midrand and surrounding areas in Gauteng</p>
+            <p>Contact: 082 210 6466 | Address: Midrand Country View, Gauteng, 1687</p>
+        </div>
     </footer>
 </body>
 </html>

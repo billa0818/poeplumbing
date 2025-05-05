@@ -3,41 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - PlumbTech Services</title>
+    <title>BILLA Plumbing Solutions | Contact</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-color: #f4f4f9; font-family: Arial, sans-serif; color: #333; margin: 0; padding: 0;">
-    <header style="background-color: #003366; color: white; padding: 10px;">
-        <div style="text-align: center;">
-            <img src="images/logo.png" alt="PlumbTech Logo" style="width: 150px; height: auto;">
-            <h1>PlumbTech Services</h1>
+<body>
+    <header>
+        <div class="container">
+            <h1>BILLA Plumbing Solutions</h1>
             <nav>
-                <ul style="list-style-type: none; padding: 0; text-align: center;">
-                    <li style="display: inline; margin: 0 15px;"><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
-                    <li style="display: inline; margin: 0 15px;"><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
-                    <li style="display: inline; margin: 0 15px;"><a href="services.html" style="color: white; text-decoration: none;">Services</a></li>
-                    <li style="display: inline; margin: 0 15px;"><a href="enquiry.html" style="color: white; text-decoration: none;">Enquiry</a></li>
-                    <li style="display: inline; margin: 0 15px;"><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inquiries.html">Inquiries</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section style="background-color: #007acc; color: white; text-align: center; padding: 50px 0;">
-            <img src="images/location.png" alt="Enquire About Our Services" style="width: 100%; height: auto;">
-            <h2>Contact Us</h2>
-            <p>We are here to assist you with your plumbing needs. Reach out to us through the details below.</p>
-        </section>
-
-        <section style="padding: 40px; background-color: #ffffff; text-align: center;">
-            <p>Email: contact@plumbtech.com</p>
-            <p>Phone: +27 123 456 789</p>
-            <p>Address: Polokwane, Limpopo</p>
-        </section>
+        <div class="container">
+            <section>
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Phone: 082 210 6466</p>
+                    <p>Address: Midrand, Gauteng, 1698</p>
+                    <p>Email: info@billaplumbing.co.za</p>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Working Hours</h3>
+                    <p>Monday to Friday: 8:00 AM - 5:00 PM</p>
+                    <p>Saturday: 9:00 AM - 1:00 PM</p>
+                    <p>Sunday & Public Holidays: Closed (Emergency services available at an extra cost)</p>
+                    <p>Emergency services available 24/7</p>
+                </div>
+                
+                <div class="service-box">
+                    <h3>Service Areas</h3>
+                    <p>We serve Midrand and surrounding areas in Gauteng including:</p>
+                    <ul>
+                        <li>Midrand</li>
+                        <li>Centurion</li>
+                        <li>Sandton</li>
+                        <li>Kyalami</li>
+                        <li>Waterfall</li>
+                        <li>Sunninghill</li>
+                    </ul>
+                </div>
+                
+                <div class="content-box">
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer style="background-color: #003366; color: white; text-align: center; padding: 15px;">
-        <p>&copy; 2025 PlumbTech Services. All rights reserved.</p>
+    <footer>
+        <div class="container">
+            <p>Serving Midrand and surrounding areas in Gauteng</p>
+            <p>Contact: 082 210 6466 | Address: Midrand Country View, Gauteng, 1687</p>
+        </div>
     </footer>
 </body>
 </html>

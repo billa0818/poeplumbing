@@ -1,0 +1,42 @@
+```css
+/* styles.css for BILLA Plumbing Solutions - Simplified for students */
+
+/* Basic Reset - Removes default browser margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styles - Sets the basic text and background for the whole page */
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Container - Centers content and sets maximum width */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles - The top section of the website */
+header {
+    background-color: #0067b3;  /* Blue background */
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+/* Navigation Menu Styles */
+nav {
+    background-color: #004d86;  /* Dar
